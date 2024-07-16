@@ -1,3 +1,25 @@
+Linux kernel 6.10.0 for VisionFive 2 (JH-7110 SoC)
+==================================================
+
+This git contains a recent Linux kernel + patches for the VisionFive 2 Risc-V 64 bit SoC.
+
+Among other things, PCI-E and USB are working now :) 
+
+``
+~$ lspci
+0000:00:00.0 PCI bridge: PLDA XpressRich-AXI Ref Design (rev 02)
+0000:01:00.0 USB controller: VIA Technologies, Inc. VL805/806 xHCI USB 3.0 Controller (rev 01)
+0001:00:00.0 PCI bridge: PLDA XpressRich-AXI Ref Design (rev 02)
+``
+
+You can also check the diff between a mainline kernel and this repo in:
+
+starfive_vs2.patch
+
+For a demo conf in a similar style as the vendor kernel (static, without modules), see:
+
+starfive-vs2.conf
+
 Linux kernel
 ============
 
